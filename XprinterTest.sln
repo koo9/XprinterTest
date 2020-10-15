@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XprinterTest", "XprinterTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xprinter.Net4.8", "..\Xprinter.Net4.8\Xprinter.Net4.8.csproj", "{FEDE6A1F-1488-4D9C-A39C-950F03CAF517}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPrinter46", "..\XPrinter46\XPrinter46.csproj", "{C70927BE-8F80-4992-A894-088094A90CB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FEDE6A1F-1488-4D9C-A39C-950F03CAF517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEDE6A1F-1488-4D9C-A39C-950F03CAF517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEDE6A1F-1488-4D9C-A39C-950F03CAF517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70927BE-8F80-4992-A894-088094A90CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70927BE-8F80-4992-A894-088094A90CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70927BE-8F80-4992-A894-088094A90CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70927BE-8F80-4992-A894-088094A90CB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
