@@ -11,15 +11,17 @@ namespace XprinterTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter printer IP address: (e.g. 192.168.0.2) default port is 9000");
+            Console.WriteLine("Enter printer IP address: (e.g. 192.168.0.2) default port is 9100");
             var ip = Console.ReadLine();
-
-            var printer = new NetworkPrinter(ip, 9000, true);
+            var printer = new NetworkPrinter( string.IsNullOrEmpty(ip) ? "192.168.3.100" : ip, 9100, true);
 
             var e = new EPSON();
             printer.Write(ByteSplicer.Combine(
                 e.Initialize(),
-                e.PrintLine("Hello Xprinter!")
+                e.PrintLine("Hello Xprinter!"),
+                e.CodePage(CodePage.CHINA),
+                e.PrintLine("中文菜单"),
+                e.FullCutAfterFeed(3)
                 ));
 
             Console.Read();
